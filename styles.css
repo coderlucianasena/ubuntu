@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image:
+        url(/images/background/background1.png),
+        url(/images/background/background2.png),
+        url(/images/background/background3.png),
+        url(/images/background/background4.png),
+        url(/images/background/background5.png);
+
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 20% 50%;
+    background-size: auto;
+}
+
+.slider__container-title {
+    color: #7723C9;
+    width: 100%;
+}
+
+.slider__container-title h1 {
+    color: #7723C9;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 59px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.slider {
+    margin: 0 auto;
+    /* width: 100%;  */
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    position: center;
+    transition: 3s;
+}
+
+.slide img {
+    height: 400px;
+    width: 388.81px;
+}
+
+.manual-navigation {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #FF007A;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 8px;
+    /* Espaçamento dos pontos */
+}
+
+.manual-btn:hover {
+    background-color: #FF007A;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -34%;
+}
+
+#radio3:checked~.first {
+    margin-left: -67%;
+}
+
+.navigation-auto div {
+    border: 2px solid #FF007A;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #FF007A;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #FF007A;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #FF007A;
+}

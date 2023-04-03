@@ -2,26 +2,6 @@ const controls = document.querySelectorAll(".control");
 
 let currentItem = 0;
 
-// let count = 1;
-// document.getElementById(".item").checked = true;
-
-
-// // Passar imagens automaticamente
-// setInterval(function () {
-//     nextImage();
-// }, 4000)
-
-// function nextImage() {
-//     count++;
-//     if (count > 3) {
-//         count = 1;
-//     }
-
-//     document.getElementById("item" + count).checked = true;
-
-// }
-
-
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 
